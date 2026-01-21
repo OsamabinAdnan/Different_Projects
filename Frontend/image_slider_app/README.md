@@ -10,9 +10,6 @@ A modern, responsive image slider built with Next.js, TypeScript, and Tailwind C
 
 ---
 
-**Image Slider App [Link](https://image-slider-osama.vercel.app/)**
-
-
 ## Introduction
 
 ## Features
