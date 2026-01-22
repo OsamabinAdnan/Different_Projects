@@ -1,13 +1,12 @@
 'use client'
 
-import React, { ChangeEvent, useEffect, useState } from 'react';
+import React, { ChangeEvent, useEffect } from 'react';
 import { Card, CardDescription, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import ThemeToggle from './Theme_Toggle';
 import toast, { Toaster } from 'react-hot-toast';
 import { useColorConverter } from '@/lib/hooks/useColorConverter';
-import { findClosestNamedColor } from '@/lib/colorUtils';
 
 export default function ColorPicker() {
   const {

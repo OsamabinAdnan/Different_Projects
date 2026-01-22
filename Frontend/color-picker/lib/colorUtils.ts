@@ -285,44 +285,12 @@ export function getFormattedColor(color: string, format: 'hex' | 'rgb' | 'hsl'):
 
 /**
  * Finds the closest named color from the color-name-list package
+ * This function is temporarily disabled due to build issues with dynamic imports.
+ * The color naming functionality will be implemented differently.
  */
-export function findClosestNamedColor(hex: string): string | null {
-  try {
-    // Dynamically import color-name-list to avoid bundling issues
-    const colorNameList = require('color-name-list');
-
-    if (!colorNameList?.colorNameList) {
-      return null;
-    }
-
-    const targetRgb = hexToRgb(hex);
-    if (!targetRgb) return null;
-
-    let closestColor = null;
-    let minDistance = Infinity;
-
-    for (const color of colorNameList.colorNameList) {
-      const colorRgb = hexToRgb(color.hex);
-      if (!colorRgb) continue;
-
-      // Calculate Euclidean distance in RGB space
-      const distance = Math.sqrt(
-        Math.pow(targetRgb.r - colorRgb.r, 2) +
-        Math.pow(targetRgb.g - colorRgb.g, 2) +
-        Math.pow(targetRgb.b - colorRgb.b, 2)
-      );
-
-      if (distance < minDistance) {
-        minDistance = distance;
-        closestColor = color.name;
-      }
-    }
-
-    return closestColor;
-  } catch (error) {
-    // If color-name-list is not available, return null
-    return null;
-  }
+export function findClosestNamedColor(_hex: string): string | null {
+  // Temporarily return null to avoid build issues
+  return null;
 }
 
 /**

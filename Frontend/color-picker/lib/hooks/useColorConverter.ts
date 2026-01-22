@@ -30,6 +30,7 @@ export interface UseColorConverterResult {
   colorState: ColorState;
   formattedColor: string;
   colorName: string | undefined;
+  isLoadingColorName: boolean;
   recentColors: ColorHistoryItem[];
   setHex: (hex: string) => void;
   setFormat: (format: 'hex' | 'rgb' | 'hsl') => void;
@@ -50,7 +51,14 @@ export function useColorConverter(initialColor: string = '#000000'): UseColorCon
     format: 'hex'
   });
 
+  const [colorName, setColorName] = useState<string | undefined>(undefined);
   const [recentColors, setRecentColors] = useState<ColorHistoryItem[]>([]);
+
+  // Load color name when color changes
+  useEffect(() => {
+    const name = findClosestNamedColor(colorState.hex);
+    setColorName(name || undefined);
+  }, [colorState.hex]);
 
   // Load recent colors from localStorage on mount
   useEffect(() => {
@@ -74,9 +82,6 @@ export function useColorConverter(initialColor: string = '#000000'): UseColorCon
 
   // Calculate formatted color
   const formattedColor = getFormattedColor(colorState.hex, colorState.format);
-
-  // Calculate color name
-  const colorName = findClosestNamedColor(colorState.hex);
 
   // Add current color to history
   const addToHistory = useCallback(() => {
@@ -141,6 +146,7 @@ export function useColorConverter(initialColor: string = '#000000'): UseColorCon
     colorState,
     formattedColor,
     colorName,
+    isLoadingColorName: false,
     recentColors,
     setHex,
     setFormat,
