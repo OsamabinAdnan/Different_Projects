@@ -2,7 +2,11 @@
 
 A modern, responsive image slider built with Next.js, TypeScript, and Tailwind CSS. This application fetches images from the Unsplash API and displays them in an interactive carousel with autoplay functionality.
 
-**Image Slider Screenshot**
+## App Deplyed Link
+
+🔗 [Image Slider App](https://image-slider-eight-lac.vercel.app/)
+
+## Image Slider Screenshot
 
 ---
 
