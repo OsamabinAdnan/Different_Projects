@@ -2,6 +2,12 @@
 
 A modern, responsive unit converter built with Next.js, TypeScript, and Tailwind CSS. Features a beautiful animated background and dark/light theme support.
 
+## App Deployed Link
+
+🔗 [Unit Converter App](https://unit-converter-ten-coral.vercel.app/)
+
+## Unit Converter Screenshot
+
 ![Unit Converter Preview](public/screenshot.png)
 
 ## ✨ Features
