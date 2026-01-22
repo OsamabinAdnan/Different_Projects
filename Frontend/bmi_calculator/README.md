@@ -2,6 +2,10 @@
 
 A modern, responsive Body Mass Index (BMI) calculator built with Next.js, TypeScript, and Tailwind CSS. This application helps users calculate their BMI and determine their weight category with an elegant user interface.
 
+## Deployed Link
+🔗 [BMI Calculator](https://bmi-calculator-delta-wine.vercel.app/)
+
+## App Screenshot
 ![BMI Calculator Screen shot](public/image.png)
 
 ## Features
