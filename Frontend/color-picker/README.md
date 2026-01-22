@@ -18,6 +18,9 @@ A sleek and modern color picker built with Next.js, offering real-time color for
 - ♿ Enhanced accessibility features
 - 🎨 Improved aesthetic design with modern UI elements
 
+## Application Deployed Link
+[Color Picker App](https://color-picker-ten-woad.vercel.app/)
+
 ## Screenshots
 ![Color Picker App Screenshot](public/App-Screenshot.png "Color Picker App Screenshot")
 

@@ -290,6 +290,7 @@ export function getFormattedColor(color: string, format: 'hex' | 'rgb' | 'hsl'):
  */
 export function findClosestNamedColor(_hex: string): string | null {
   // Temporarily return null to avoid build issues
+  // This function is kept for future implementation
   return null;
 }
 
