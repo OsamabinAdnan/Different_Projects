@@ -28,8 +28,6 @@ export default function ImageSlider() {
     const[currentIndex, setCurrentIndex] =useState<number>(0);
     // State to manage the play/pause status of the carousel
     const [isPlaying, setIsPlaying] = useState<boolean>(true);
-    // State to track loading status
-    const [isLoading, setIsLoading] = useState<boolean>(true);
     // State to track if we're on the client side to prevent hydration errors
     const [isClient, setIsClient] = useState<boolean>(false);
 
@@ -39,7 +37,6 @@ export default function ImageSlider() {
     // Function to fetch images from Unsplash API
     const fetchImages = async () => {
         try {
-            setIsLoading(true); // Set loading to true when starting fetch
 
             // Check if the API key is available
             const apiKey = process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY;
@@ -72,7 +69,6 @@ export default function ImageSlider() {
                 ];
 
                 setImages(sampleImages);
-                setIsLoading(false);
                 return;
             }
 
@@ -102,7 +98,6 @@ export default function ImageSlider() {
                 ];
 
                 setImages(sampleImages);
-                setIsLoading(false);
                 return;
             }
 
@@ -152,7 +147,7 @@ export default function ImageSlider() {
             setImages(sampleImages);
         }
         finally {
-            setIsLoading(false); // Set loading to false after fetch completes
+            // Cleanup after fetch completes
         }
     };
 
