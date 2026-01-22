@@ -1,0 +1,146 @@
+// Conversion rates for various units categorized by length, weight, and volume
+export const conversionRates:Record<string, Record<string, number>> = {
+    length : {
+        'Millimeters (mm)': 1,
+        'Centimeters (cm)': 10,
+        'Meters (m)': 1000,
+        'Kilometers (km)': 1000000,
+        'Inches (inches)': 25.4,
+        'Feet (feet)': 304.8,
+        'Yards (yards)': 914.4,
+        'Miles (miles)': 1609344,
+    },
+    weight : {
+        'Grams (g)': 1,
+        'Kilograms (kg)': 1000,
+        'Pounds (lb)': 453.592,
+        'Ounces (oz)': 28.3495,
+    },
+    volume : {
+        'Milliliters (ml)': 1,
+        'Liters (l)': 1000,
+        'Cups (cup)': 236.588,
+        'Fluid Ounces (fl oz)': 29.5735,
+        'Gallons (gal)': 3785.41,
+        'Quarts (qt)': 946.353,
+        'Pints (pt)': 473.176
+    },
+    temperature : {
+        'Celsius (°C)': 1,
+        'Fahrenheit (°F)': 1,
+        'Kelvin (K)': 1,
+    },
+    speed : {
+        'Meters per second (m/s)': 1,
+        'Kilometers per hour (km/h)': 3.6,
+        'Miles per hour (mph)': 2.23694,
+        'Feet per second (ft/s)': 3.28084,
+        'Knots (kn)': 1.94384,
+    },
+    time : {
+        'Seconds (s)': 1,
+        'Minutes (min)': 60,
+        'Hours (h)': 3600,
+        'Days (d)': 86400,
+        'Weeks (w)': 604800,
+        'Months (mo)': 2628000,
+        'Years (y)': 31536000,
+    },
+    area: {
+        'Square meters (m2)': 1,
+        'Square kilometers (km2)': 1000000,
+        'Square feet (ft2)': 10.7639,
+        'Square inches (in2)': 1550.0031,
+        'Square yards (yd2)': 9.290304,
+        'Square miles (mi2)': 3.861e-7,
+    },
+    power: {
+        'Watts (W)': 1,
+        'Kilowatts (kW)': 1000,
+        'Horsepower (hp)': 745.699872,
+        'Kilowatt hours (kWh)': 3600000,
+        'Megawatts (MW)': 1000000,
+    },
+    energy: {
+        'Joules (J)': 1,
+        'Kilowatt-hours (kWh)': 3600000,
+        'Megajoules (MJ)': 1000000,
+        'Kilogram-hours (kg/h)': 3600,
+        'Calories (cal)': 4.184,
+        'Kilocalories (kcal)': 4184,
+    },
+}
+
+// Unit types categorized by length, weight, and volume
+
+export const unitTypes:Record<string, string[]> = {
+    length : [
+        'Millimeters (mm)',
+        'Centimeters (cm)',
+        'Meters (m)',
+        'Kilometers (km)',
+        'Inches (inches)',
+        'Feet (feet)',
+        'Yards (yards)',
+        'Miles (miles)',
+    ],
+    weight : [
+        'Grams (g)',
+        'Kilograms (kg)',
+        'Pounds (lb)',
+        'Ounces (oz)',
+    ],
+    volume : [
+        'Milliliters (ml)',
+        'Liters (l)',
+        'Cups (cup)',
+        'Fluid Ounces (fl oz)',
+        'Gallons (gal)',
+        'Quarts (qt)',
+        'Pints (pt)',
+    ],
+    temperature : [
+        'Celsius (°C)',
+        'Fahrenheit (°F)',
+        'Kelvin (K)',
+    ],
+    speed : [
+        'Meters per second (m/s)',
+        'Kilometers per hour (km/h)',
+        'Miles per hour (mph)',
+        'Feet per second (ft/s)',
+        'Knots (kn)',
+    ],
+    time : [
+        'Seconds (s)',
+        'Minutes (min)',
+        'Hours (h)',
+        'Days (d)',
+        'Weeks (w)',
+        'Months (mo)',
+        'Years (y)',
+    ],
+    area: [
+        'Square meters (m2)',
+        'Square kilometers (km2)',
+        'Square feet (ft2)',
+        'Square inches (in2)',
+        'Square yards (yd2)',
+        'Square miles (mi2)',
+    ],
+    power: [
+        'Watts (W)',
+        'Kilowatts (kW)',
+        'Horsepower (hp)',
+        'Kilowatt hours (kWh)',
+        'Megawatts (MW)',
+    ],
+    energy: [
+        'Joules (J)',
+        'Kilowatt-hours (kWh)',
+        'Megajoules (MJ)',
+        'Kilogram-hours (kg/h)',
+        'Calories (cal)',
+        'Kilocalories (kcal)',
+    ]
+}
