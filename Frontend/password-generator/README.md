@@ -2,6 +2,12 @@
 
 A sleek and secure password generator built with Next.js and TypeScript, featuring a modern glassmorphic UI design and real-time feedback.
 
+## App Deployed Link
+
+🔗 [Password Generator](https://password-generator-navy-five.vercel.app/)
+
+## 📸 App Screenshot
+
 ![Password Generator](public/screenshot.png)
 
 ## ✨ Features
