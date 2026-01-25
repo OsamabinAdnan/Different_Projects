@@ -2,6 +2,13 @@
 
 A modern, interactive calculator built with Next.js, TypeScript, and Tailwind CSS featuring dark mode support, smooth animations, and 3D visualizations using Three.js. This advanced calculator includes scientific functions, memory operations, and a comprehensive set of mathematical tools.
 
+## App deployed Link
+🔗 [Calculator](https://standard-calculator-osamabinadnan.netlify.app/)
+
+## App Screenshot
+
+![Calculator Screenshot](public/screenshot.png)
+
 ## 🌟 Features
 
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
